@@ -3,6 +3,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
+
 int main(){
 	int a;
 	
@@ -38,8 +39,9 @@ printf("********************************************\n");
 scanf("%i",&a);
 switch(a){
 	case 1:
-		char r;
+		
 		system("cls");
+		char r;
 		printf("\nJOGO DE PERGUNTAS E RESPOSTA\n\n");
 		printf("PERGUNTA 1: QUEM DESCOBRIU O BRASIL?\n");
 		printf("a)Pedro Alvares Cabral\n");
@@ -77,8 +79,10 @@ switch(a){
 		if(r == 'd' || r == 'D'){
 			printf("\nVOCE ACERTOU!\n\n");
 		}
-		else {
+		else if(r == 'a' || r == 'b' || r == 'c') {
 			printf("\nVOCE ERROU :(\n\n");
+		}else{
+			printf("Resposta invalida");
 		}
 		printf("PERGUNTA 4: QUEM É PEDRO GIROTTO?\n");
 		printf("a)Professor de programacao do Cesupa\n");
@@ -105,20 +109,25 @@ switch(a){
 		}
 		else {
 			printf("\nVOCE ERROU :(\n\n");
-		} main();
+		} 
+		printf("VOCE TERMINOU O JOGO, O QUE VOCE PRETENDE FAZER AGORA?");
+		main();
 		break;
 	case 2:
-	char p1[40];
-	char p2[40];
 	
 	system ("cls");
 	
+	int caixa[5] = {0, 0, 0, 0, 0};
+	
+	char p1[40];
+	char p2[40];
 	printf("Bem vindo ao jogo Cobra na Caixa.\n");
 	
 	printf("Escolha o nome do jogador 1:\n");
-	scanf("%s", &p1);
+	fflush(stdin);
+	gets(p1);
 	printf("\nEscolha o nome do jogador 2:\n");
-	scanf("%s", &p2);
+	gets(p2);
 	
 	printf("Voces estao explorando uma tumba do farao Neebe, o lesado do %s aperta um botao caindo em um armadilha\n", p1);
 	printf("O jogador %s avista que as portas que estava para sair acaba fechando, deixando voces presos\n", p2);
@@ -126,8 +135,8 @@ switch(a){
 	printf("Uma contem tambem uma cobra mortal.\n");
 	
 	
-}	
+}	main();
 	
 	
 	return 0;
-}
+}   

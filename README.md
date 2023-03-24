@@ -3,6 +3,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
+#include<stdbool.h>
 
 int main(){
 	int a;
@@ -16,11 +17,12 @@ printf("*                                          *\n");
 printf("*                                          *\n");
 printf("*              GIRAS ARCADE                *\n");
 printf("*                                          *\n");
-printf("* 1) Perguntas e respostas                 *\n");
-printf("* 2) Cobra na caixa                        *\n");
-printf("* 3) Gousmas War                           *\n");
-printf("* 4) Sair                                  *\n");
+printf("*    Escolha o que desejas jogar           *\n");
 printf("*                                          *\n");
+printf("*    1) Perguntas e respostas              *\n");
+printf("*    2) Cobra na caixa                     *\n");
+printf("*    3) Gousmas War                        *\n");
+printf("*    4) Sair                               *\n");
 printf("*                                          *\n");
 printf("*                                          *\n");
 printf("*                                          *\n");
@@ -56,6 +58,8 @@ switch(a){
 		else {
 			printf("\nVOCE ERROU :(\n\n");
 		}
+		system("cls");
+		fflush(stdin);
 		printf("PERGUNTA 2: QUAL O FORMATO DA TERRA?\n");
 		printf("a)Redonda\n");
 		printf("b)Plana\n");
@@ -69,6 +73,9 @@ switch(a){
 		else {
 			printf("\nVOCE ERROU :(\n\n");
 		}
+		system("cls");
+		
+		
 		printf("PERGUNTA 3: QUAL A CAPITAL DO PARA?\n");
 		printf("a)Ananindeua\n");
 		printf("b)Grao Para\n");
@@ -118,9 +125,17 @@ switch(a){
 	system ("cls");
 	
 	int caixa[5] = {0, 0, 0, 0, 0};
-	
+	int botao = rand() % 5;
+	int cobra = rand() % 5;
+	int jogador;
+	int escolha;
+	char comece;
 	char p1[40];
 	char p2[40];
+	
+	
+	srand(time(NULL));
+	
 	printf("Bem vindo ao jogo Cobra na Caixa.\n");
 	
 	printf("Escolha o nome do jogador 1:\n");
@@ -129,13 +144,38 @@ switch(a){
 	printf("\nEscolha o nome do jogador 2:\n");
 	gets(p2);
 	
-	printf("Voces estao explorando uma tumba do farao Neebe, o lesado do %s aperta um botao caindo em um armadilha\n", p1);
-	printf("O jogador %s avista que as portas que estava para sair acaba fechando, deixando voces presos\n", p2);
+	system("cls");
+	
+	printf("Voces estao explorando a tumba do farao Neebe, o lesado do %s aperta um botao, fazendo com que voces caiam em um armadilha\n", p1);
+	printf("O %s avista que as portas que estavam para sair acabaram fechando, deixando voces dois presos\n", p2);
 	printf("5 caixas aparecem na frente de voces, uma delas contem um BOTAO para a saida\n");
-	printf("Uma contem tambem uma cobra mortal.\n");
+	printf("Uma contem tambem uma cobra mortal. \n\n");
+	
+	fflush(stdin);
+	
+	printf("Aperte a tecla A para comecar");
+	scanf("%c", &comece);
 	
 	
-}	main();
+	if(comece == 'a' || comece == 'A'){
+		system("cls");
+		fflush(stdin);
+		
+		while(1){
+			printf("%s, escolha uma caixa de 1 a 5\n", p1);
+			scanf("%d", &escolha);
+			
+			if(escolha < 1 || escolha >5){
+			printf("Escolha invalida! Tente novamente.\n");
+			continue;
+			}
+		}
+		
+		
+		
+	}
+	
+}	
 	
 	
 	return 0;

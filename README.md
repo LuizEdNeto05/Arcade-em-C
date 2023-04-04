@@ -8,7 +8,7 @@ int main(){
 	int a;
 	while(1){
 	
-printf("\n********************************************\n");
+printf("********************************************\n");
 printf("*                                          *\n");
 printf("*                 ARCADE                   *\n");
 printf("*                                          *\n");
@@ -47,78 +47,118 @@ switch(a){
 		system("cls");
 		char r;
 		int x;
+		int acertos, erros;
+	
+	acertos = 0;
+	erros = 0;	
 		printf("\nJOGO DE PERGUNTAS E RESPOSTA\n\n");
-		printf("PERGUNTA 1: QUEM DESCOBRIU O BRASIL?\n");
-		printf("a)Pedro Alvares Cabral\n");
-		printf("b)Pedro Girotto\n");
-		printf("c)Pedro Victor\n");
-		printf("d)Pedro Henrique\n");
+		printf("Erros: %i\n", erros);
+		printf("Acertos: %i\n\n", acertos);
+		printf("PERGUNTA 1: QUEM EH CONSIDERADO O PAI DA COMPUTACAO?\n");
+		printf("a)Alan Turing\n");
+		printf("b)Albert Einstein\n");
+		printf("c)Werner Heisenberg\n");
+		printf("d)Marie Curie\n");
 		fflush(stdin);
 		scanf("%c",&r);
+		system("cls");
 		if(r == 'a' || r == 'A'){
+			acertos++;
 			printf("\nVOCE ACERTOU!\n\n");
+			
 		}
 		else {
-			printf("\nVOCE ERROU :(\n\n");
+			erros++;
+			printf("\nVOCE ERROU :( A RESPOSTA CORRETA ERA a) Alan Turing\n\n");
+			
 		}
 		
 		fflush(stdin);
-		printf("PERGUNTA 2: QUAL O FORMATO DA TERRA?\n");
-		printf("a)Redonda\n");
-		printf("b)Plana\n");
-		printf("c)Rosquinha\n");
-		printf("d)Triangulo\n");
+		
+	    printf("Erros: %i\n", erros);
+		printf("Acertos: %i\n\n", acertos);
+		printf("PERGUNTA 2: QUEM ERA O LIDER DA UNIAO SOVIETICA DURANTE A SEGUNDA GUERRA?\n");
+		printf("a)Jair Bolsonaro\n");
+		printf("b)Josef Stalin\n");
+		printf("c)Winston Churchill\n");
+		printf("d)Adolf Hitler\n");
 		fflush(stdin);
 		scanf("%c",&r);
-		if(r == 'a' || r == 'A'){
+		system("cls");
+		if(r == 'b' || r == 'B'){
+			acertos++;
 			printf("\nVOCE ACERTOU!\n\n");
+			
 		}
-		else {
-			printf("\nVOCE ERROU :(\n\n");
+		else { 
+		erros++;
+			printf("\nVOCE ERROU :( A RESPOSTA CORRETA ERA b) Josef Stalin\n\n");
+			
 	 }
 		
-		
-		printf("PERGUNTA 3: QUAL A CAPITAL DO PARA?\n");
-		printf("a)Ananindeua\n");
-		printf("b)Grao Para\n");
-		printf("c)Cotijuba\n");
-		printf("d)Belem\n");
+		printf("Erros: %i\n", erros);
+		printf("Acertos: %i\n\n", acertos);
+		printf("PERGUNTA 3: QUAL A CAPITAL DA ROMENIA?\n");
+		printf("a)Varsovia\n");
+		printf("b)Budapeste\n");
+		printf("c)Brasilia\n");
+		printf("d)Bucareste\n");
 		fflush(stdin);
 		scanf("%c",&r);
+		system("cls");
 		if(r == 'd' || r == 'D'){
+			acertos++;
 			printf("\nVOCE ACERTOU!\n\n");
+			
 		}
 		else if(r == 'a' || r == 'b' || r == 'c') {
-			printf("\nVOCE ERROU :(\n\n");
+			erros++;
+			printf("\nVOCE ERROU :( A RESPOSTA CORRETA ERA d) Bucareste\n\n");
+			
 		}else{
 			printf("Resposta invalida");
 		}
-		printf("PERGUNTA 4: QUEM EH PEDRO GIROTTO?\n");
-		printf("a)Professor de programacao do Cesupa\n");
-		printf("b)Morador de Cotijuba\n");
-		printf("c)Porteiro\n");
-		printf("d)Advogado\n");
+		printf("Erros: %i\n", erros);
+		printf("Acertos: %i\n\n", acertos);
+		printf("PERGUNTA 4: QUAL E O NUMERO DO CESUPA ARGO?\n");
+		printf("a)980\n");
+		printf("b)1523\n");
+		printf("c)1416\n");
+		printf("d)2023\n\n");
 		fflush(stdin);
 		scanf("%c",&r);
-		if(r == 'a' || r == 'A'){
+		system("cls");
+		if(r == 'B' || r == 'b'){
+			acertos++;
 			printf("\nVOCE ACERTOU!\n\n");
+			
 		}
 		else{
-			printf("\nVOCE ERROU :(\n\n");
+			erros++;
+			printf("\nVOCE ERROU :( A RESPOSTA CORRETA ERA b) 1523\n\n");
+			
 		}
-		printf("PERGUNTA 5: QUANTO EH 1+1?\n");
-		printf("a)44\n");
-		printf("b)1\n");
-		printf("c)2\n");
-		printf("d)100\n");
+		printf("Erros: %i\n", erros);
+		printf("Acertos: %i\n\n", acertos);
+		printf("PERGUNTA 5: QUEM DESCOBRIU O BRASIL?\n");
+		printf("a)Pedro Girotto\n");
+		printf("b)Julio Cesar\n");
+		printf("c)Pedro Alvares Cabral\n");
+		printf("d)Alexandre, o Grande\n");
 		fflush(stdin);
 		scanf("%c",&r);
 		if(r == 'c' || r == 'C'){
+			acertos++;
 			printf("\nVOCE ACERTOU!\n\n");
+			
 		}
 		else{
-			printf("\nVOCE ERROU :(\n\n");
+			erros++;
+			printf("\nVOCE ERROU :( A RESPOSTA CORRETA ERA c) Pedro alvares Cabral\n\n");
+			
 		} 
+		printf("\nTotal de erros: %i\n", erros);
+		printf("Total de acertos: %i\n\n", acertos);
 		printf("VOCE TERMINOU O JOGO, O QUE VOCE PRETENDE FAZER AGORA?\n\n");
 		printf("1)JOGAR NOVAMENTE\n\n2)RETORNAR AO MENU\n\n");
 		scanf("%i", &x);
@@ -193,7 +233,7 @@ switch(a){
 				printf("A cobra estava nessa caixa, %s perdeu\n", jogador == 1 ? p1 : p2);
 				break;
 				}else if(escolha == botao){
-				printf("O botao estava nessa caixa, %s ficou preso e voce saiu da tumba!\n", jogador == 1 ? p1 : p2);
+				printf("O botao estava nessa caixa, %s venceu!\n", jogador == 1 ? p1 : p2);
 				break;
 			}else{
 				printf("Nao havia nada na caixa\n");
@@ -204,22 +244,24 @@ switch(a){
 				jogador = jogador == 1 ? 2 : 1;	
 		}
 	}
-	    printf("O que desejas fazer agora?\n");
-	     printf("1)JOGAR NOVAMENTE\n\n2)RETORNAR AO MENU\n\n");
+	    printf("\nO que desejas fazer agora?\n");
+	     printf("\n1)JOGAR NOVAMENTE\n2)RETORNAR AO MENU\n\n");
 		 scanf("%i", &x);
 		 
 		 if(x == 1){
 		 	
 		 }else if(x == 2){
 		 	break;
+		 	
 		 }
 		
 		
 	}
 	 break;
+	 
 }
-	
+	system("cls");
 }
 
 	return 0;
-}   
+}

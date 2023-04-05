@@ -48,6 +48,7 @@
 #include<time.h>
 #include<stdbool.h>
 #include<locale.h>
+#include <conio.h>
 int main(void) {
 	int a,x;
 	do {
@@ -313,15 +314,20 @@ int main(void) {
 					int dano;
 					int gousmaAtaque, gousmaDefesa;
 					int gousmaOriginal;
-
-				
-					printf("\n GOUSMAS  WARS: \n");
-					printf("BOM JOGO! \n");
-
-					if (opcao == 1)
+					int ok;
+					
+					printf(" \t BEM-VINDO  \n");
+					printf(" \t      Voce esta no GOUSMAS WAR ;) \n");
+					printf(" \t BOA SORTE, PENSE BEM ANTES DE FAZER SUA JOGADA \n");
+					printf(" \t coloque 0 quando estiver pronto para jogar \n");
+					printf("--> ");
+					scanf("%f", &ok);
+					printf(" \n\n\n");
+			
+					if (opcao == 0)
 
 						while (1) { 
-
+					
 							printf("\nJOGADOR NUMERO 1 - Gousmas: %d,%d\n\n", nivel_fJ1[0], nivel_fJ1[1]);
 							printf("JOGADOR NUMERO 2- Gousmas: %d,%d\n\n", nivel_fJ2[0], nivel_fJ2[1]);
 

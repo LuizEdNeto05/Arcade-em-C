@@ -196,6 +196,26 @@ int main(void) {
 						printf("\nVOCE ERROU :( A RESPOSTA CORRETA ERA c) Pedro alvares Cabral\n\n");
 
 					}
+					printf("Erros: %i\n", erros);
+					printf("Acertos: %i\n\n", acertos);
+					printf("PERGUNTA BONUS: QUAL E O NOME DA SERIE EM QUE UM PROFESSOR DE QUIMICA TEM CANCER?\n");
+					printf("a) Chaves\n");
+					printf("b) La Casa de Papel\n");
+					printf("c) Avenida Brasil\n");
+					printf("d) Breaking Bad\n");
+					fflush(stdin);
+					scanf("%c", &r);
+					
+					
+					if(r == 'd' || r == 'D') {
+						acertos++;
+						printf("\nVOCE ACERTOU!\n\n");
+
+					} else {
+						erros++;
+						printf("\nVOCE ERROU :( A RESPOSTA CORRETA ERA d) Breaking Bad\n\n");
+
+					}
 					printf("\nTotal de erros: %i\n", erros);
 					printf("Total de acertos: %i\n\n", acertos);
 					printf("VOCE TERMINOU O JOGO, O QUE VOCE PRETENDE FAZER AGORA?\n\n");

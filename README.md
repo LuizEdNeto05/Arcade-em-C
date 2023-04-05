@@ -52,11 +52,11 @@ int main(void) {
 	int a,x;
 	do {
 
-		printf("****************\n");
+		printf("********************************************\n");
 		printf("*                                          *\n");
 		printf("*                 ARCADE                   *\n");
 		printf("*                                          *\n");
-		printf("****************\n");
+		printf("********************************************\n");
 		printf("*                                          *\n");
 		printf("*                                          *\n");
 		printf("*               GIRAS ARCADE               *\n");
@@ -69,18 +69,18 @@ int main(void) {
 		printf("*    4) Sair                               *\n");
 		printf("*                                          *\n");
 		printf("*                                          *\n");
-		printf("****************\n");
+		printf("********************************************\n");
 		printf("*                                          *\n");
 		printf("*                 ARCADE                   *\n");
 		printf("*                                          *\n");
-		printf("****************\n");
+		printf("********************************************\n");
 		printf("*                                          *\n");
 		printf("*         *                   *            *\n");
 		printf("*        * *                  |            *\n");
 		printf("*         *                                *\n");
 		printf("*                                          *\n");
 		printf("*                                          *\n");
-		printf("****************\n");
+		printf("********************************************\n");
 		scanf("%i",&a);
 		switch(a) {
 			case 1:

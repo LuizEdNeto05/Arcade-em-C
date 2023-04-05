@@ -260,8 +260,8 @@ int main(void) {
 
 					system("cls");
 
-					printf("Voces estao explorando a tumba do farao Neebe,\no lesado do %s aperta um botao, fazendo com que voces caiam em uma armadilha\n", p1);
-					printf("%s avista que as portas que estavam para sair acabaram fechando, deixando voces dois presos\n", p2);
+					printf("Voces estao explorando a tumba do farao Neebe,o lesado do %s aperta um botao, fazendo com que voces caiam em uma armadilha\n", p1);
+					printf("%s ve que as portas que levavam para a saida acabaram fechando, deixando voces dois presos\n", p2);
 					printf("5 caixas aparecem na frente de voces, uma delas contem um BOTAO para a saida\n");
 					printf("Uma contem tambem uma cobra MORTAL.\n\n");
 
